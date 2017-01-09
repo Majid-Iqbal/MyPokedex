@@ -1,0 +1,42 @@
+//
+//  PokemonsDetailsVC.swift
+//  MyPokizz
+//
+//  Created by Majid on 07/01/2017.
+//  Copyright © 2017 Majid. All rights reserved.
+//
+
+import UIKit
+
+class PokemonsDetailsVC: UIViewController {
+
+    
+    @IBOutlet weak var pokeLbl:UILabel!
+    @IBOutlet weak var mainImg: UIImageView!
+    @IBOutlet weak var descriptionLbl: UILabel!
+    @IBOutlet weak var typeLbl: UILabel!
+    @IBOutlet weak var defenseLbl: UILabel!
+    @IBOutlet weak var heightLbl: UILabel!
+    @IBOutlet weak var pokeexLbl: UILabel!
+    @IBOutlet weak var weightLbl: UILabel!
+    @IBOutlet weak var attackLbl: UILabel!
+    @IBOutlet weak var evoLbl: UILabel!
+    @IBOutlet weak var currentEvoImg: UIImageView!
+    @IBOutlet weak var nextEvoImg: UIImageView!
+    
+    var pokemons:Pokemon!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        pokeLbl.text = pokemons.name
+        
+        pokemons.downloadPokemonDetails{
+            
+        }
+
+    }
+
+
+
+}
