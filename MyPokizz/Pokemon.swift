@@ -192,12 +192,12 @@ class Pokemon {
                         self._nextEvolutionId = num
                         self._nextEvolutionTxt = to
                         
-                        if let level = evolutions[0]["level"] as? Int{
-                            self._nextEvolutionLvl = "\(level)"
-                        }
+//                        if let level = evolutions[0]["method"] as? String{
+//                            self._nextEvolutionLvl = "\(level)"
+//                        }
                         print(self._nextEvolutionId)
                         print(self._nextEvolutionTxt)
-                        print(self._nextEvolutionLvl)
+//                        print(self._nextEvolutionLvl)
                         
                     }
                     
